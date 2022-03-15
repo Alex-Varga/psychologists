@@ -74,7 +74,7 @@ $(function() {
     // Возвращаем активность кнопке отправки
     submitButton.prop('disabled', false);
 
-      window.location.pathname = "/thanks.html";
+      window.location.pathname = "thanks.html";
 
       // Очищаем поля формы
       form.reset();
