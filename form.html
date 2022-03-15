@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Form</title>
+</head>
+<body>
+
+  <section class="form__section">
+    <div class="form__container">
+      <div class="form__content">
+        <form action="" class="form g-form" id="g-form">
+
+          <h2 class="question">Как к вам обращаться? (вам не обязательно называть настоящее имя)</h2>
+          <div class="input__item">
+            <input required id="name" type="text" name="Имя" class="input">
+          </div>
+
+          <h2 class="question">Сколько вам лет?</h2>
+          <div class="input__item">
+            <input required id="age" type="text" name="Возраст" class="input">
+          </div>
+
+          <h2 class="question">Как с вами связаться? (номер телефона, никнейм в telegram, адрес электронной почты, Skype и т.д.)</h2>
+          <div class="input__item">
+            <input required id="communication" type="text" name="Как связаться" class="input">
+          </div>
+
+          <h2 class="question question-checkbox">Выберите одну или несколько категорий, к которой вы можете себя отнести:</h2>
+          <label for="Military" class="label">
+            <input id="Military" type="checkbox" name="Категория" class="checkbox" value="Военный">
+            <div class="custom-check-icon"></div>
+            <h3 class="label-name">Военный</h3>
+          </label>
+          <label for="Volunteer" class="label">
+            <input id="Volunteer" type="checkbox" name="Категория" class="checkbox" value="Волонтер">
+            <div class="custom-check-icon"></div>
+            <h3 class="label-name">Волонтер</h3>
+          </label>
+          <label for="Immigrant" class="label">
+            <input id="Immigrant" type="checkbox" name="Категория" class="checkbox" value="Переселенец">
+            <div class="custom-check-icon"></div>
+            <h3 class="label-name">Переселенец</h3>
+          </label>
+          <label for="Refugee" class="label">
+            <input id="Refugee" type="checkbox" name="Категория" class="checkbox" value="Беженец">
+            <div class="custom-check-icon"></div>
+            <h3 class="label-name">Беженец</h3>
+          </label>
+          <label for="Pregnant" class="label">
+            <input id="Pregnant" type="checkbox" name="Категория" class="checkbox" value="Беременная женщина">
+            <div class="custom-check-icon"></div>
+            <h3 class="label-name">Беременная женщина</h3>
+          </label>
+          <label for="Children" class="label">
+            <input id="Children" type="checkbox" name="Категория" class="checkbox" value="Женщина с детьми">
+            <div class="custom-check-icon"></div>
+            <h3 class="label-name">Женщина с детьми</h3>
+          </label>
+          <label for="Policeman" class="label">
+            <input id="Policeman" type="checkbox" name="Категория" class="checkbox" value="Полицейский">
+            <div class="custom-check-icon"></div>
+            <h3 class="label-name">Полицейский</h3>
+          </label>
+          <label for="Doctor" class="label">
+            <input id="Doctor" type="checkbox" name="Категория" class="checkbox" value="Врач">
+            <div class="custom-check-icon"></div>
+            <h3 class="label-name">Врач</h3>
+          </label>
+          <label for="Variant" class="label label-other">
+            <input id="Variant" type="checkbox" name="Категория" class="checkbox" value="Ваш вариант:">
+            <div class="input__block">
+              <div class="custom-check-icon"></div>
+              <h3 class="label-name">Ваш вариант:</h3>
+            </div>
+            <label for="Variant" class="input__item arbitrary">
+              <input type="text" name="Категория" class="input">
+            </label>
+          </label>
+
+          <h2 class="question question-checkbox">Место вашего пребывания:</h2>
+          <label for="Epicenter" class="label">
+            <input required id="Epicenter" type="radio" name="Местоположение" class="checkbox" value="Находитесь в эпицентре военных действий">
+            <div class="custom-check-icon"></div>
+            <h3 class="label-name">Находитесь в эпицентре военных действий</h3>
+          </label>
+          <label for="Inside" class="label">
+            <input required id="Inside" type="radio" name="Местоположение" class="checkbox" value="Находитесь в безопасности на территории Украины">
+            <div class="custom-check-icon"></div>
+            <h3 class="label-name">Находитесь в безопасности на территории Украины</h3>
+          </label>
+          <label for="Outside" class="label">
+            <input required id="Outside" type="radio" name="Местоположение" class="checkbox" value="Находитесь за пределами Украины">
+            <div class="custom-check-icon"></div>
+            <h3 class="label-name">Находитесь за пределами Украины</h3>
+          </label>
+
+          <h2 class="question question-checkbox question-width">Оцените ваше состояние по шкале от 1 до 10, где 1 – это спокойное, привычное для вас состояние, а 10 – максимальный уровень сложности.</h2>
+          <div class="number-radio">
+            <label for="1" class="label label-number">
+              <h3 class="label-name">1</h3>
+              <input required id="1" type="radio" name="Состояние" class="checkbox" value="1">
+              <div class="custom-check-icon-2"></div>
+            </label>
+            <label for="2" class="label label-number">
+              <h3 class="label-name">2</h3>
+              <input required id="2" type="radio" name="Состояние" class="checkbox" value="2">
+              <div class="custom-check-icon-2"></div>
+            </label>
+            <label for="3" class="label label-number">
+              <h3 class="label-name">3</h3>
+              <input required id="3" type="radio" name="Состояние" class="checkbox" value="3">
+              <div class="custom-check-icon-2"></div>
+            </label>
+            <label for="4" class="label label-number">
+              <h3 class="label-name">4</h3>
+              <input required id="4" type="radio" name="Состояние" class="checkbox" value="4">
+              <div class="custom-check-icon-2"></div>
+            </label>
+            <label for="5" class="label label-number">
+              <h3 class="label-name">5</h3>
+              <input required id="5" type="radio" name="Состояние" class="checkbox" value="5">
+              <div class="custom-check-icon-2"></div>
+            </label>
+            <label for="6" class="label label-number">
+              <h3 class="label-name">6</h3>
+              <input required id="6" type="radio" name="Состояние" class="checkbox" value="6">
+              <div class="custom-check-icon-2"></div>
+            </label>
+            <label for="7" class="label label-number">
+              <h3 class="label-name">7</h3>
+              <input required id="7" type="radio" name="Состояние" class="checkbox" value="7">
+              <div class="custom-check-icon-2"></div>
+            </label>
+            <label for="8" class="label label-number">
+              <h3 class="label-name">8</h3>
+              <input required id="8" type="radio" name="Состояние" class="checkbox" value="8">
+              <div class="custom-check-icon-2"></div>
+            </label>
+            <label for="9" class="label label-number">
+              <h3 class="label-name">9</h3>
+              <input required id="9" type="radio" name="Состояние" class="checkbox" value="9">
+              <div class="custom-check-icon-2"></div>
+            </label>
+            <label for="10" class="label label-number">
+              <h3 class="label-name">10</h3>
+              <input required id="10" type="radio" name="Состояние" class="checkbox" value="10">
+              <div class="custom-check-icon-2"></div>
+            </label>
+          </div>
+
+          <h2 class="question question-checkbox">Оцените необходимость в срочном получении психологической помощи от 1 до 10. </h2>
+          <div class="number-radio">
+            <label for="n1" class="label label-number">
+              <h3 class="label-name">1</h3>
+              <input required id="n1" type="radio" name="Необходимость в срочном получении психологической помощи" class="checkbox" value="1">
+              <div class="custom-check-icon-2"></div>
+            </label>
+            <label for="n2" class="label label-number">
+              <h3 class="label-name">2</h3>
+              <input required id="n2" type="radio" name="Необходимость в срочном получении психологической помощи" class="checkbox" value="2">
+              <div class="custom-check-icon-2"></div>
+            </label>
+            <label for="n3" class="label label-number">
+              <h3 class="label-name">3</h3>
+              <input required id="n3" type="radio" name="Необходимость в срочном получении психологической помощи" class="checkbox" value="3">
+              <div class="custom-check-icon-2"></div>
+            </label>
+            <label for="n4" class="label label-number">
+              <h3 class="label-name">4</h3>
+              <input required id="n4" type="radio" name="Необходимость в срочном получении психологической помощи" class="checkbox" value="4">
+              <div class="custom-check-icon-2"></div>
+            </label>
+            <label for="n5" class="label label-number">
+              <h3 class="label-name">5</h3>
+              <input required id="n5" type="radio" name="Необходимость в срочном получении психологической помощи" class="checkbox" value="5">
+              <div class="custom-check-icon-2"></div>
+            </label>
+            <label for="n6" class="label label-number">
+              <h3 class="label-name">6</h3>
+              <input required id="n6" type="radio" name="Необходимость в срочном получении психологической помощи" class="checkbox" value="6">
+              <div class="custom-check-icon-2"></div>
+            </label>
+            <label for="n7" class="label label-number">
+              <h3 class="label-name">7</h3>
+              <input required id="n7" type="radio" name="Необходимость в срочном получении психологической помощи" class="checkbox" value="7">
+              <div class="custom-check-icon-2"></div>
+            </label>
+            <label for="n8" class="label label-number">
+              <h3 class="label-name">8</h3>
+              <input required id="n8" type="radio" name="Необходимость в срочном получении психологической помощи" class="checkbox" value="8">
+              <div class="custom-check-icon-2"></div>
+            </label>
+            <label for="n9" class="label label-number">
+              <h3 class="label-name">9</h3>
+              <input required id="n9" type="radio" name="Необходимость в срочном получении психологической помощи" class="checkbox" value="9">
+              <div class="custom-check-icon-2"></div>
+            </label>
+            <label for="n10" class="label label-number">
+              <h3 class="label-name">10</h3>
+              <input required id="n10" type="radio" name="Необходимость в срочном получении психологической помощи" class="checkbox" value="10">
+              <div class="custom-check-icon-2"></div>
+            </label>
+          </div>
+
+          <h2 class="question">Опишите коротко запрос (не обязательно) </h2>
+          <div class="input__item">
+            <input id="request" type="text" name="Описание запроса" class="input">
+          </div>
+
+          <h2 class="question question-checkbox">В какое время вы можете выйти на связь со специалистом:</h2>
+          <label for="first" class="label">
+            <input required id="first" type="radio" name="Время для связи" class="checkbox" value="Первая половина дня">
+            <div class="custom-check-icon"></div>
+            <h3 class="label-name">Первая половина дня</h3>
+          </label>
+          <label for="second" class="label">
+            <input required id="second" type="radio" name="Время для связи" class="checkbox" value="Вторая половина дня">
+            <div class="custom-check-icon"></div>
+            <h3 class="label-name">Вторая половина дня</h3>
+          </label>
+          <label for="third" class="label">
+            <input required id="third" type="radio" name="Время для связи" class="checkbox" value="Любое время">
+            <div class="custom-check-icon"></div>
+            <h3 class="label-name">Любое время</h3>
+          </label>
+          <label for="fourth" class="label">
+            <input required id="fourth" type="radio" name="Время для связи" class="checkbox" value="Затрудняюсь сказать точно">
+            <div class="custom-check-icon"></div>
+            <h3 class="label-name">Затрудняюсь сказать точно</h3>
+          </label> 
+          <label for="fifth" class="label label-other">
+            <input required id="fifth" type="radio" name="Время для связи" class="checkbox" value="Конкретные временные промежутки:">
+            <div class="input__block">
+              <div class="custom-check-icon"></div>
+              <h3 class="label-name">Конкретные временные промежутки:</h3>
+            </div>
+            <label for="fifth" class="input__item other">
+              <input type="text" name="Время для связи" class="input">
+            </label>
+          </label>
+
+
+          <fieldset class="g-form__input-wrapper g-form__input-wrapper_hidden">
+            <label for="honeypot">Помогает бороться со спамом. Должно быть пустым!</label>
+            <input id="honeypot" type="text" name="honeypot" value="">
+          </fieldset>
+
+          <button class="input__btn btn g-form__button" type="submit">Оставить заявку</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/g-form.js"></script>
+</body>
+</html>
